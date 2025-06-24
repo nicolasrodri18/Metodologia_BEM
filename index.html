@@ -117,9 +117,214 @@
     <h3>Ejercicio #7</h3>
     <table class="table">
         <tr class="table__filas">
-            <td class="table__filas--columnas">hola</td>
-            <td class="table__filas--columnas">hola</td>
+            <td class="table__filas--columnas">Nombre</td>
+            <td class="table__filas--columnas">Apellido</td>
+            <td class="table__filas--columnas">Edad</td>
+        </tr>
+        <tr class="table__filas">
+            <td class="table__filas--columnas">Maria</td>
+            <td class="table__filas--columnas">Martinez</td>
+            <td class="table__filas--columnas">19</td>
+        </tr>
+        <tr class="table__filas">
+            <td class="table__filas--columnas">Andres</td>
+            <td class="table__filas--columnas">Romero</td>
+            <td class="table__filas--columnas">21</td>
+        </tr>
+        <tr class="table__filas">
+            <td class="table__filas--columnas">Mario</td>
+            <td class="table__filas--columnas">Vargas</td>
+            <td class="table__filas--columnas">18</td>
         </tr>
     </table>
+
+    <h3>Ejercicio #8 </h3>
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__copy">&copy; 2025 Mi Sitio.</p>
+            <nav class="footer__nav">
+                <a href="#" class="footer__link">Privacidad</a>
+                <a href="#" class="footer__link">Términos</a>
+            </nav>
+        </div>
+    </footer>
+
+    <h3>Ejercicio #9</h3>
+    <div class="tabs">
+        <div class="tabs__header">
+            <input type="radio" name="tabs" id="tab1" class="tabs__input" checked>
+            <label for="tab1" class="tabs__label">Pestaña 1</label>
+
+            <input type="radio" name="tabs" id="tab2" class="tabs__input">
+            <label for="tab2" class="tabs__label">Pestaña 2</label>
+
+            <input type="radio" name="tabs" id="tab3" class="tabs__input">
+            <label for="tab3" class="tabs__label">Pestaña 3</label>
+        </div>
+    </div>
+
+    <h3>Ejercicio #10</h3>
+    <div class="category-selector">
+        <h3 class="category-selector__title">Explorar Categorías</h3>
+        <ul class="category-selector__list">
+            <li class="category-selector__item">
+                <input type="radio" name="categories" id="cat-electronica" class="category-selector__input" checked>
+                <label for="cat-electronica" class="category-selector__label">Electrónica</label>
+            </li>
+            <li class="category-selector__item">
+                <input type="radio" name="categories" id="cat-moda" class="category-selector__input">
+                <label for="cat-moda" class="category-selector__label">Moda</label>
+            </li>
+            <li class="category-selector__item">
+                <input type="radio" name="categories" id="cat-hogar" class="category-selector__input">
+                <label for="cat-hogar" class="category-selector__label">Hogar y Jardín</label>
+            </li>
+            <li class="category-selector__item">
+                <input type="radio" name="categories" id="cat-libros" class="category-selector__input">
+                <label for="cat-libros" class="category-selector__label">Libros</label>
+            </li>
+            <li class="category-selector__item">
+                <input type="radio" name="categories" id="cat-deportes" class="category-selector__input">
+                <label for="cat-deportes" class="category-selector__label">Deportes</label>
+            </li>
+        </ul>
+    </div> 
+
+    <h3>Ejercicio #11</h3>
+    <form class="rating-input">
+        <fieldset class="rating-input__fieldset">
+            <legend class="rating-input__legend">Tu calificación:</legend>
+            <div class="rating-input__stars">
+                <input type="radio" id="star5" name="rating" value="5" class="rating-input__radio">
+                <label for="star5" class="rating-input__label">★</label>
+
+                <input type="radio" id="star4" name="rating" value="4" class="rating-input__radio">
+                <label for="star4" class="rating-input__label">★</label>
+
+                <input type="radio" id="star3" name="rating" value="3" class="rating-input__radio">
+                <label for="star3" class="rating-input__label">★</label>
+
+                <input type="radio" id="star2" name="rating" value="2" class="rating-input__radio">
+                <label for="star2" class="rating-input__label">★</label>
+
+                <input type="radio" id="star1" name="rating" value="1" class="rating-input__radio">
+                <label for="star1" class="rating-input__label">★</label>
+            </div>
+        </fieldset>
+    </form>
+
+    <h3>Ejercicio #12</h3>
+    <div class="video-player">
+        <video class="video-player__media" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div>
+
+    <h3>Ejercicio #13</h3>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <h2 class="sidebar__title">Mi Panel</h2>
+            </div>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <input type="radio" name="sidebar-nav" id="nav-home" class="sidebar__input" checked>
+                        <label for="nav-home" class="sidebar__label">
+                            <span class="sidebar__icon">🏠</span> Inicio
+                        </label>
+                    </li>
+                    <li class="sidebar__item">
+                        <input type="radio" name="sidebar-nav" id="nav-stats" class="sidebar__input">
+                        <label for="nav-stats" class="sidebar__label">
+                            <span class="sidebar__icon">📊</span> Estadísticas
+                        </label>
+                    </li>
+                    <li class="sidebar__item">
+                        <input type="radio" name="sidebar-nav" id="nav-products" class="sidebar__input">
+                        <label for="nav-products" class="sidebar__label">
+                            <span class="sidebar__icon">🛒</span> Productos
+                        </label>
+                    </li>
+                    <li class="sidebar__item">
+                        <input type="radio" name="sidebar-nav" id="nav-settings" class="sidebar__input">
+                        <label for="nav-settings" class="sidebar__label">
+                            <span class="sidebar__icon">⚙️</span> Configuración
+                        </label>
+                    </li>
+                    <li class="sidebar__item">
+                        <input type="radio" name="sidebar-nav" id="nav-profile" class="sidebar__input">
+                        <label for="nav-profile" class="sidebar__label">
+                            <span class="sidebar__icon">👤</span> Perfil
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar__footer">
+                <p class="sidebar__footer-text">&copy; 2025 Empresa. Todos los derechos reservados.</p>
+            </div>
+        </aside>
+    </div>
+
+    <h3>Ejercicio #14</h3>
+    <div class="cart-summary">
+        <h3 class="cart-summary__title">Resumen de tu Pedido</h3>
+
+        <div class="cart-summary__items-list">
+            <div class="cart-summary__item">
+                <span class="cart-summary__item-name">Auriculares Inalámbricos X1</span>
+                <span class="cart-summary__item-price">$89.99</span>
+            </div>
+            <div class="cart-summary__item">
+                <span class="cart-summary__item-name">Teclado Mecánico RGB</span>
+                <span class="cart-summary__item-price">$120.00</span>
+            </div>
+            <div class="cart-summary__item">
+                <span class="cart-summary__item-name">Mouse Gaming Pro</span>
+                <span class="cart-summary__item-price">$45.50</span>
+            </div>
+        </div>
+
+        <div class="cart-summary__prices">
+            <div class="cart-summary__price-row">
+                <span class="cart-summary__price-label">Subtotal:</span>
+                <span class="cart-summary__price-value">$255.49</span>
+            </div>
+            <div class="cart-summary__price-row">
+                <span class="cart-summary__price-label">Envío:</span>
+                <span class="cart-summary__price-value">$10.00</span>
+            </div>
+            <div class="cart-summary__price-row">
+                <span class="cart-summary__price-label">Impuestos (19%):</span>
+                <span class="cart-summary__price-value">$48.54</span>
+            </div>
+            <div class="cart-summary__price-row cart-summary__price-row--total">
+                <span class="cart-summary__price-label">Total:</span>
+                <span class="cart-summary__price-value">$314.03</span>
+            </div>
+        </div>
+
+        <button class="cart-summary__checkout-button">Proceder al Pago</button>
+    </div>
+
+    <h3>Ejercicio 15</h3>
+    <div class="blog-post">
+        <h1 class="blog-post__title">Explorando la Belleza Escondida de Santander</h1>
+        <div class="blog-post__meta">
+            <span class="blog-post__author">Por Juan Pérez</span>
+            <span class="blog-post__date">24 de Junio de 2025</span>
+            <span class="blog-post__category">Viajes</span>
+        </div>
+        <img src="https://via.placeholder.com/800x450/4CAF50/FFFFFF?text=Paisaje+Santander" alt="Paisaje de Santander" class="blog-post__image">
+        <div class="blog-post__content">
+            <p>Santander, un departamento ubicado en el corazón de Colombia, es un paraíso para los amantes de la naturaleza y la aventura. Desde las imponentes montañas de la cordillera Oriental hasta los ríos caudalosos que serpentean por sus valles, cada rincón ofrece una experiencia única.</p>
+            <p>La capital, Bucaramanga, conocida como la "Ciudad Bonita", es famosa por sus parques y su vibrante vida urbana. Sin embargo, más allá de la ciudad, se encuentran joyas como el Cañón del Chicamocha, un impresionante accidente geográfico que quita el aliento.</p>
+            <p>Explorar los pueblos coloniales de Barichara, Girón o San Juan de Girón es como viajar en el tiempo. Sus calles empedradas, arquitectura bien conservada y la calidez de su gente invitan a perderse en su encanto. Girón, en particular, destaca por su arquitectura colonial blanca y sus celebraciones religiosas.</p>
+            <p>La gastronomía santandereana es otro punto fuerte. Platillos como la carne oreada, el mute, la pepitoria y el cabro son imprescindibles para quienes buscan una experiencia culinaria auténtica. Y no podemos olvidar el famoso mute santandereano, un plato lleno de sabor y tradición.</p>
+            <p>Ya sea que busques deportes extremos, tranquilidad en la naturaleza o sumergirte en la historia y cultura, Santander lo tiene todo. Es un destino que promete dejar una huella inolvidable en cada visitante.</p>
+        </div>
+    </div>
 </body>
 </html>
