@@ -181,3 +181,96 @@ h3:not(:first-child){
     color: rgb(33, 40, 46);
     margin-top: 15px;
 }
+
+/* mediante la metodologia BEM se llama la clase y se empiezan a configurar los espacios de que mostrara la alerta */
+.alerta {
+    padding: 2rem;
+    text-align: center;
+}
+
+.alerta__boton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* se asignan los parametros para la alerta o notificacion */
+.alerta__notificacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    opacity: 0;
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+
+.alerta__notificacion:target {
+    display: block;
+    opacity: 1;
+}
+
+/* se asigna el contenido de la alerta y como sera mostrado */
+.alerta__notificacion--contenido {
+    background-color: #ffffff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.alerta__notificacion--titulo {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #a09d9d;
+}
+
+.alerta__notificacion--texto {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+/* se asigna la funcion para desactivar o salir de la alerta */
+.alerta__notificacion--cerrar {
+    background-color: #c5c4c4;
+    color: #979797;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+} 
+
+.table{
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    margin-left: 47%;
+    border: 3px solid;
+}
+
+.table__filas--columnas:not(:first-child){
+    border-left: 3px solid;
+}
+
+.table__filas--columnas{
+    padding: 7px;
+}
